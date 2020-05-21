@@ -6,7 +6,10 @@ class SidePanel extends React.Component {
   render() {
     return <div className="examples-SidePanel">
       <Link to="/examples/counter">to counter page</Link>
+      <br/>
       <Link to="/examples/welcome">to welcome page</Link>
+      <br/>
+      <Link to="/">back to start</Link>
     </div>
   }
 }

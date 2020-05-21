@@ -2,7 +2,7 @@ import {
   EXAMPLES_ADD_COUNTER,
 } from './constants'
 
-export function clearOutput() {
+export function addCounter() {
   return {
     type: EXAMPLES_ADD_COUNTER
   }
