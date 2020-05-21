@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 class WelcomePage extends React.Component {
   render() {
     return <div className="examples-WelcomePage">
-      WelcomePage
+      <h2>WelcomePage</h2>
     </div>
   }
 }
