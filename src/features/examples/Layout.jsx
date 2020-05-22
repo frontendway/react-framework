@@ -13,9 +13,9 @@ class Layout extends React.Component {
       </section>
       <section>
         <Switch>
-          <Route path="/examples/counter" component={CounterPage}></Route>
+          <Route path="/examples" exact component={CounterPage}></Route>
           <Route path="/examples/welcome" component={WelcomePage}></Route>
-          <Redirect to="/examples/counter"></Redirect>
+          <Redirect path="*" to="/examples"></Redirect>
         </Switch>
       </section>
     </div>
