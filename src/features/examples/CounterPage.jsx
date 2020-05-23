@@ -1,29 +1,17 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import * as actions from './redux/actions'
-import { bindActionCreators } from 'redux'
+import { useAddCounter } from './redux/hooks'
 
-class CounterPage extends React.Component {
-  render() {
-    return <div className="examples-CounterPage">
+function CounterPage() {
+  const { counter, addCounter } = useAddCounter()
+
+  return (
+    <div className="examples-CounterPage">
       &nbsp;
-      { this.props.examples.counter }
+      { counter }
       &nbsp;
-      <button onClick={this.props.actions.addCounter}>+</button>
+      <button onClick={addCounter}>+</button>
     </div>
-  }
+  )
 }
 
-function mapStateToProps(state) {
-  return {
-    examples: state.examples
-  }
-}
-
-function mapActionToProps(dispatch) {
-  return {
-    actions: bindActionCreators({ ...actions }, dispatch)
-  }
-}
-
-export default connect(mapStateToProps, mapActionToProps)(CounterPage)
+export default CounterPage

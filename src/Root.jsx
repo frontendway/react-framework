@@ -11,7 +11,7 @@ class Root extends React.Component {
     return (
       <Provider store={store.getStore()}>
         <HashRouter>
-        <Switch>
+          <Switch>
             <Route path="/" exact component={DefaultPage}></Route>
             <Route path="/examples" component={Layout}></Route>
             <Route path="*" component={NotFoundPage}></Route>

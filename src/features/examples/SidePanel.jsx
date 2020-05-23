@@ -1,15 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 class SidePanel extends React.Component {
   render() {
     return <div className="examples-SidePanel">
-      <Link to="/examples">to counter page</Link>
+      <NavLink to="/examples">to counter page</NavLink>
       <br/>
-      <Link to="/examples/welcome">to welcome page</Link>
+      <NavLink to="/examples/welcome">to welcome page</NavLink>
       <br/>
-      <Link to="/">back to start</Link>
+      <NavLink to="/">back to start</NavLink>
     </div>
   }
 }

@@ -8,6 +8,7 @@ const reducers = [
 export default function reducer(state = initState, action) {
   let newState = null
   switch(action.type) {
+    // Handle cross-topic actions here
     default:
       newState = state
   }
