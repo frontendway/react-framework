@@ -1,13 +1,12 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import SidePanel from './SidePanel'
 import CounterPage from './CounterPage'
 import WelcomePage from './WelcomPage'
 
-class Layout extends React.Component {
-  render() {
-    return <div className="examples-layout">
+function Layout() {
+  return (
+    <div className="examples-layout">
       <section>
         <SidePanel />
       </section>
@@ -19,7 +18,7 @@ class Layout extends React.Component {
         </Switch>
       </section>
     </div>
-  }
+  )
 }
 
-export default connect(null, null)(Layout)
+export default Layout
