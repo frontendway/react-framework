@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 class SidePanel extends React.Component {
   render() {
-    return <div className="examples-SidePanel">
+    return <div className="examples-side-panel">
       <NavLink to="/examples">to counter page</NavLink>
       <br/>
       <NavLink to="/examples/welcome">to welcome page</NavLink>

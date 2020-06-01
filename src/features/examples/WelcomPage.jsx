@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 class WelcomePage extends React.Component {
   render() {
-    return <div className="examples-WelcomePage">
+    return <div className="examples-welcome-page">
       <h2>WelcomePage</h2>
     </div>
   }

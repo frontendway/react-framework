@@ -5,7 +5,7 @@ function CounterPage() {
   const { counter, addCounter } = useAddCounter()
 
   return (
-    <div className="examples-CounterPage">
+    <div className="examples-counter-page">
       &nbsp;
       { counter }
       &nbsp;
