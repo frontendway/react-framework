@@ -1,8 +1,10 @@
 import React from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
-import SidePanel from './SidePanel'
-import CounterPage from './CounterPage'
-import WelcomePage from './WelcomPage'
+import {
+  SidePanel,
+  CounterPage,
+  WelcomePage
+} from './index'
 
 function Layout() {
   return (
